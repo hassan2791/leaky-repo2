@@ -12,7 +12,7 @@ function sfQuery(queryString, success, error){
         conn.query('SELECT Id FROM User', function(err, res) {
             if (err) {
                 error(err);
-                console.error(err);
+                console.error(err);console.error(err);
             }
             success(res);
         });
